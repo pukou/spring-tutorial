@@ -12,7 +12,10 @@ module.exports = {
     // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
-    ['meta', { name: 'theme-color', content: '#11a8cd' }] // 移动浏览器主题颜色
+    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+
+    ['meta', { name: 'wwads-cn-verify', content: 'mxqWx62nfQQ9ocT4e5DzISHzOWyF4s' }], // 广告相关，你可以去掉
+    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
   markdown: {
     // lineNumbers: true,
@@ -26,27 +29,31 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: 'Spring综合',
+        text: '综合篇',
         link: '/01.Java/13.框架/01.Spring/00.Spring综合/'
       },
       {
-        text: 'Spring核心',
+        text: '核心篇',
         link: '/01.Java/13.框架/01.Spring/01.Spring核心/'
       },
       {
-        text: 'Spring数据',
+        text: '数据篇',
         link: '/01.Java/13.框架/01.Spring/02.Spring数据/'
       },
       {
-        text: 'SpringIO',
+        text: 'Web篇',
+        link: '/01.Java/13.框架/01.Spring/03.SpringWeb/'
+      },
+      {
+        text: 'IO篇',
         link: '/01.Java/13.框架/01.Spring/04.SpringIO/'
       },
       {
-        text: 'Spring集成',
+        text: '集成篇',
         link: '/01.Java/13.框架/01.Spring/05.Spring集成/'
       },
       {
-        text: 'Spring其他',
+        text: '其他',
         link: '/01.Java/13.框架/01.Spring/99.Spring其他/'
       }
     ],
